@@ -1,0 +1,44 @@
+.quotes {
+  --spacer: 1.5rem;
+
+  li {
+    &:nth-child(2) {
+      transform: translateY(3rem);
+    }
+    &:nth-child(3) {
+      transform: translateY(6rem);
+    }
+  }
+
+  blockquote {
+    background: $darkMagenta;
+    color: $lightGrayish;
+    text-align: left;
+    border-radius: $border;
+    padding: 2rem;
+    max-width: 25rem;
+    margin: 0 auto;
+    height: 100%;
+  }
+}
+
+img {
+  width: 3rem;
+  border-radius: 50%;
+  
+  @media (min-width: 50em) {
+    margin-right: var(--spacer);
+  }
+}
+
+.name {
+  font-weight: 800;
+}
+
+.status {
+  color: $oftPink;
+}
+
+.quote {
+  margin-top: var(--spacer);
+}
